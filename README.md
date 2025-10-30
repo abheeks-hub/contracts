@@ -26,7 +26,7 @@ This smart contract provides a robust solution for blockchain-based operations. 
 
 ## 🔗 Deployed Smart Contract
 
-**Contract Address: [0xd9145CCE52D386f254917e481eB44e9943F39138](https://celo-alfajores.blockscout.com/address/0xd9145CCE52D386f254917e481eB44e9943F39138?tab=index)
+**Contract Address: https://celo-alfajores.blockscout.com/address/0xd9145CCE52D386f254917e481eB44e9943F39138?tab=index
 
 **Network:** CELO Alfajores Testnet  
 **Block Explorer:** [View on CELO Explorer](https://celo-alfajores.blockscout.com/address/XXX)
