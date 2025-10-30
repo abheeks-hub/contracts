@@ -97,18 +97,37 @@ You can interact with the deployed contract using:
 
 ## 📝 Usage Example
 
-```javascript
-const { ethers } = require("ethers");
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-// Connect to CELO network
-const provider = new ethers.providers.JsonRpcProvider("https://alfajores-forno.celo-testnet.org");
-
-// Contract instance
-const contract = new ethers.Contract(contractAddress, abi, signer);
-
-// Call contract function
-const result = await contract.yourFunction();
-console.log(result);
+/**
+ * @title SimpleCounter
+ * @dev A basic smart contract that counts up automatically
+ */
+contract SimpleCounter {
+    // State variable to store the count
+    uint256 public count;
+    
+    // Event emitted when count increases
+    event CountIncreased(uint256 newCount);
+    
+    // Constructor - runs once when contract is deployed
+    constructor() {
+        count = 0;
+    }
+    
+    // Function to increment the counter by 1
+    function increment() public {
+        count = count + 1;
+        emit CountIncreased(count);
+    }
+    
+    // Function to get the current count (already public, but showing as example)
+    function getCount() public view returns (uint256) {
+        return count;
+    }
+}
 ```
 
 ## 🧪 Testing
@@ -141,7 +160,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+- Abheek Samaddar - *Initial work* - [YourGitHub](https://github.com/abheeks-hub)
 
 ## 🙏 Acknowledgments
 
@@ -153,9 +172,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions or support, please open an issue or contact:
 
-- **Email:** your.email@example.com
-- **Twitter:** [@yourhandle](https://twitter.com/yourhandle)
-- **Discord:** YourDiscord#1234
+- **Email:** abheeksamaddar07@gmail.co
 
 ## 🔮 Future Enhancements
 
@@ -169,4 +186,4 @@ For questions or support, please open an issue or contact:
 
 ⭐ **Star this repository if you find it helpful!**
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by Abheek Samaddar (https://github.com/abheeks-hub)
